@@ -47,14 +47,11 @@ int main() {
                     val = (dist(rng));
                 }
 
-                cout << "100 angka acak telah digenerate.\n";
-
-                cout << "Nums:\n";
-                for(int i = 0; i < nums.size(); i++) cout << '['<< i << "]:" << nums[i] << ' ';
-                cout << '\n';
+                // give message here
+                // print the number list
 
                 cout << "Masukkan angka yang ingin dicari: "; cin >> target;
-                
+
                 sequentialSearch(nums, target);
                 break;
             }
@@ -72,12 +69,8 @@ int main() {
                     val = (dist(rng));
                 }
 
-                sort(nums.begin(), nums.end());
-                cout << size << " angka telah digenerate dan diurutkan.\n";
-
-                cout << "Nums:\n";
-                for(int i = 0; i < nums.size(); i++) cout << '['<< i << "]:" << nums[i] << ' ';
-                cout << '\n';
+                // give message here
+                // print the number list
 
                 cout << "Masukkan angka yang ingin dicari: "; cin >> target;
 
