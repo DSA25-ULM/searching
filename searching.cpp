@@ -7,11 +7,11 @@
 using namespace std;
 
 
-void sequentialSearch(const vector<int> &nums){
+void sequentialSearch(const vector<int> &nums, int target){
     // TODO
 }
 
-void binarySearch(const vector<int> &nums){
+void binarySearch(const vector<int> &nums, int target){
     // TODO
 }
 
@@ -27,7 +27,7 @@ void explain(){
 
 
 int main() {
-    int opt;
+    int opt, target;
     do {
         cout << "Pilih menu" << endl;
         cout << "1. Sequential Searching" << endl;
@@ -48,7 +48,14 @@ int main() {
                 }
 
                 cout << "100 angka acak telah digenerate.\n";
-                sequentialSearch(nums);
+
+                cout << "Nums:\n";
+                for(int i = 0; i < nums.size(); i++) cout << '['<< i << "]:" << nums[i] << ' ';
+                cout << '\n';
+
+                cout << "Masukkan angka yang ingin dicari: "; cin >> target;
+                
+                sequentialSearch(nums, target);
                 break;
             }
 
@@ -67,7 +74,14 @@ int main() {
 
                 sort(nums.begin(), nums.end());
                 cout << size << " angka telah digenerate dan diurutkan.\n";
-                binarySearch(nums);
+
+                cout << "Nums:\n";
+                for(int i = 0; i < nums.size(); i++) cout << '['<< i << "]:" << nums[i] << ' ';
+                cout << '\n';
+
+                cout << "Masukkan angka yang ingin dicari: "; cin >> target;
+
+                binarySearch(nums, target);
                 break;
             }
 
